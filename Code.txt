@@ -107,8 +107,6 @@ from pizzas p join order_details od on p.pizza_id = od.pizza_id
 join pizza_types pt on p.pizza_type_id = pt.pizza_type_id
 group by pt.category order by revenue_percent desc;
 
--- Analyze the cumulative revenue generated over time.
-
 -- Determine the top 3 most ordered pizza types based on revenue for each pizza category.
 
 select category, name, revenue from (
