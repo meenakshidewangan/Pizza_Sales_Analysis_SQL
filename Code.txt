@@ -27,9 +27,9 @@ Select count(*) from order_details;
 
 select name, category from pizza_types where ingredients like '%Garlic%';
 
--- total no. of order in 11am to 5pm in 01/01/2015.
+-- total no. of order in 11am to 5pm in 01/01/2023.
 
-select count(order_id) from orders where order_date = '2015-01-01' AND order_time between '11:00:00' and '17:00:00';
+select count(order_id) from orders where order_date = '2023-01-01' AND order_time between '11:00:00' and '17:00:00';
 
 -- find differnt pizza sizes.
 
